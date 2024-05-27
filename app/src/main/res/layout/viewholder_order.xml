@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/buyerNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tên khách hàng: Đinh Hữu Nam"
+            android:textStyle="bold"
+            android:textColor="@color/blue_grey"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/orderStatusTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Trạng thái: Đang Giao Hàng"
+            android:textColor="@color/blue_grey"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/buyerNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/buyerNameTxt" />
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Thời gian đặt hàng: 24-05-2024"
+            android:textColor="@color/blue_grey"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/buyerNameTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalAmountTxt" />
+
+        <TextView
+            android:id="@+id/addressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Địa chỉ nhà: Phùng Khoang"
+            android:textColor="@color/blue_grey"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/buyerNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/orderStatusTxt" />
+
+        <TextView
+            android:id="@+id/totalAmountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tổng tiền: 200.000 VND"
+            android:textColor="@color/blue_grey"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/buyerNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/addressTxt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
